@@ -3,34 +3,25 @@
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
 }
 
-.headerContainer ul {
-  display: flex;
-  justify-content: space-around;
-  width: 25vw;
-  min-width: 200px;
-}
-
-.headerContainer ul li {
-  list-style: none;
-}
-
-.headerContainer .linkStyle {
+.headerContainer a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   transition: color 0.25s ease-in-out, border 0.05s ease-in-out;
 }
 
-.headerContainer .linkStyle:hover {
-  color: red;
-  border-bottom: 2px solid red;
+.headerContainer a:hover {
+  color: rgb(217, 217, 217);
+  border-bottom: 2px solid rgb(217, 217, 217);
 }
 
-.headerContainer h3 {
-  color: #fff;
+.headerContainer a.active {
+  color: rgb(176, 176, 176);
+  border-bottom: 2px solid rgb(176, 176, 176);
+  cursor: default;
 }

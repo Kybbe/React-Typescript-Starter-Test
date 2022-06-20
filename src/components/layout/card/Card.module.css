@@ -1,0 +1,64 @@
+.card {
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cardDeleter {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  z-index: 2;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  cursor: pointer;
+  
+  transition: all 0.2s ease-in-out;
+}
+
+.cardDeleter:hover {
+  background-color: rgb(202, 202, 202);
+  transform: scale(1.1);
+}
+
+.deletingCard {
+  opacity: 0.5;
+}
+
+.cardImage {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cardImage img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardContent {
+  padding: 10px;
+  position: relative;
+}
+
+.cardContent h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cardContent p {
+  margin: 0;
+  color: rgb(69, 69, 69);
+}

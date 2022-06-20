@@ -1,0 +1,21 @@
+.headline {
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.loader {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
