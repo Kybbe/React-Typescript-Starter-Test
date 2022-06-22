@@ -13,11 +13,11 @@ interface Props {
 }
 
 export const Card: React.FC<Props> = (props) => {
-  let {id, title, description, url} = props.subject;
+  const {id, title, description, url} = props.subject;
 
-  let [deleting, setDeleting] = useState(false);
+  const [deleting, setDeleting] = useState(false);
 
-  function handleClick() {
+  function handleClick(): void {
     setDeleting(true);
     props.deleteCard(id, props.screen);
   }
